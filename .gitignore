@@ -1,6 +1,11 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+.DS_Store
+bin
+gen
+target
+.project
+.classpath
+.settings
+.idea
+*.iml
+.metadata
+out
