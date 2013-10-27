@@ -1,4 +1,4 @@
 sample-android-datepicker
 =========================
 
-Contoh pemanggilan datepicker di android
+Contoh pemanggilan datepicker dari activity(bukan fragment) di android

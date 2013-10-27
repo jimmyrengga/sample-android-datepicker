@@ -9,19 +9,20 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
 public class MainActivity extends Activity{
 	
-	protected static EditText eText;
+	protected static Button btn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		eText = (EditText) findViewById(R.id.editText1);
+		btn = (Button) findViewById(R.id.button1);
 	}
 
 	@Override
@@ -52,7 +53,7 @@ public class MainActivity extends Activity{
 	}
 	
 	public void onDateSet(DatePicker view, int year, int month, int day) {
-		eText.setText(new StringBuilder().append(month + 1)
+		btn.setText(new StringBuilder().append(month + 1)
 				   .append("-").append(day).append("-").append(year)
 				   .append(" "));
 		}
